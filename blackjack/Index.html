@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>blackjack</title>
+</head>
+<body>
+
+    <div class="tittel">
+        <h1>blackjack</h1>
+        <h4 id="tekst">Klikk på "Start" for å spille og så "Hit", eller "Stå".</h4>
+    </div>
+
+    <div class="linje">
+        <p>-</p>
+    </div>
+
+    <div class="summer">
+
+        <div class="sum_spiller">
+            <h4>Dine kort</h4>
+            <p id="spiller">0</p>
+        </div>
+        
+        <div class="sum_dealer">
+            <h4>Dealer</h4>
+            <p id="dealer">0</p>
+        </div>
+        
+    </div>
+
+    <div class="linje">
+        <p>-</p>
+    </div>
+
+    <div class="resultat" id="resultat_tekst"><h3></h3></div>
+
+    <div class="buttons">
+
+        <button id="startkanpp" onclick="trekk_kort(), trekk_kort()">Start</button>
+        <button onclick="Hit()">Hit</button>
+        <button onclick="Stå()">Stå</button>
+        <button onclick='location.href="index.html"'>Spill igjen</button>
+    </div>
+
+
+    <script src="blackjack.js"></script>
+</body>
+</html>
